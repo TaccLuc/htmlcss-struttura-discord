@@ -12,9 +12,34 @@
     GENERAL
 */
 
+.section-height{
+    height: 100px;
+}
+
 .container{
     max-width: 1200px;
     margin: 0 auto;
+}
+
+.small-flex-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;  
+
+}
+
+.small-flex-container-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5em;
+    height: 70px;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: center;
 }
 
 .big-col{
@@ -42,12 +67,20 @@
 }
 
 .padding{
-    padding: 20px;
-}
-.footer-padding{
-    padding: 10px 20px 30px 20px;
+    padding: 20px 0;
 }
 
+.footer-padding{
+    padding: 10px 0 30px 0;
+}
+
+.footer-padding-2{
+    padding-top: 30px;
+}
+
+.footer-margin{
+    margin-bottom: 3px;
+}
 
 /* 
     HEADER
@@ -55,18 +88,6 @@
 
 /* TOP HEADER */
 
-.top-header{
-    height: 100px;
-}
-
-.header-flex-container{
-    display: flex;
-    justify-content: center;
-    height: 50px;
-    align-items: center;
-    font-size: 1.5em;  
-
-}
 .logo{
     width: 20%;
     height: 100%;
@@ -107,29 +128,13 @@ nav li{
     MAIN
 */
 
-.main-flex-container{
-    display: flex;
-    justify-content: center;
-}
 
-.section-background{
-    background-color: #D3D3D3;
-}
 
 /* 
     FOOTER
 */
 
 /* TOP FOOTER */
-
-.top-footer-flex-container{
-    display: flex;
-    justify-content: center;
-}
-
-.footer-background{
-    background-color: #23272A;
-}
 
 .footer-2nd-flex{
     display: flex;
@@ -142,16 +147,27 @@ nav li{
     DEBUG
 */
 
-.header-flex-container > *{
+.small-flex-container > *{
     border: 2px dashed black;
 }
 
-div.header-flex-container{
+header:nth-child(1){
+    background-color: #ADD8E6;
+}
+.small-flex-container{
     background-color: #DAA520;
 }
 
-.top-header{
-    background-color: #ADD8E6;
+.small-flex-container-2 > *{
+    border: 2px dashed black;
+}
+
+.small-flex-container-2{
+    background-color: #DAA520;
+}
+
+.section-background{
+    background-color: #D3D3D3;
 }
 
 .bottom-header > div{
@@ -188,6 +204,11 @@ div.header-flex-container{
     border: 2px dashed black;
 }
 
-.top-footer-flex-container{
+footer .flex-container{
     border: 2px dashed black;
+}
+
+footer > div,
+footer >section {
+    background-color: #23272A;
 }
