@@ -71,10 +71,12 @@
     width: calc((100% / 12) * 8);
     height: 200px;
 }
+
 .col-single{
     width: 25%;
     height: 200px;
 }
+
 .col-double{
     width: calc((100% / 12) * 4);
     height: 200px;
@@ -86,15 +88,17 @@
 
 /* TOP HEADER */
 
-#logo{
+.header-flex > *{
     padding: 10px;
+}
+
+#logo{
     width: 20%;
 }
 
 nav{
     width: 60%;
     text-align: center;
-    padding: 10px;
 }
 
 nav li{
@@ -104,15 +108,10 @@ nav li{
 .login{
     width: 20%;
     text-align: end;
-    padding: 10px;
 }
 
 /* BOTTOM HEADER */
 
-.bottom-header{
-    height: 200px;
-    width: 100%;
-}
 
 /* 
     MAIN
@@ -130,10 +129,7 @@ footer > div:first-child{
 
 /* TOP FOOTER */
 
-.footer-2nd-flex{
-    display: flex;
-    
-}
+
 
 /*  BOTTOM FOOTER */
 
@@ -152,13 +148,13 @@ header > section:first-child{
     background-color: #DAA520;
 }
 
-header > section:last-child{
+header > div{
     background-color: #00008B;
 }
 
 .flex.padding > div{
     height: 200px;
-    width: 50%;
+    width: 60%;
     background-color: #EE82EE;
     border: 2px dashed black;
 }
