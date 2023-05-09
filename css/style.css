@@ -61,13 +61,42 @@ nav li{
 }
 
 /* BOTTOM HEADER */
+
 .bottom-header{
     display: flex;
     justify-content: center;
     padding: 30px;
 }
 
+.bottom-header > div{
+    height: 200px;
+    width: 50%;
+}
 
+/* 
+    MAIN
+*/
+
+.main-flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.big-col{
+    width: 60%;
+    height: 200px;
+}
+
+.small-col{
+    width: 40%;
+    height: 200px;
+}
+
+.section-background{
+    background-color: #D3D3D3;
+}
 
 /* 
     DEBUG
@@ -87,11 +116,19 @@ div.header-flex-container{
 
 .bottom-header > div{
     background-color: #EE82EE;
-    height: 200px;
-    width: 50%;
     border: 2px dashed black;
 }
 
 .bottom-header{
     background-color: #00008E;
+}
+
+.big-col{
+    background-color: #1E90FF;
+    border: 2px dashed black;
+}
+
+.small-col{
+    background-color: #FFC0CB;
+    border: 2px dashed black;
 }
