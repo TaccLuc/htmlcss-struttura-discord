@@ -17,6 +17,38 @@
     margin: 0 auto;
 }
 
+.big-col{
+    width: 60%;
+    height: 200px;
+}
+
+.small-col{
+    width: 40%;
+    height: 200px;
+}
+
+.col-1{
+    width: 25%;
+    height: 200px;
+}
+
+.col-2{
+    width: calc((100% / 12) *4);
+    height: 200px;
+}
+.col-12{
+    width: 100%;
+    height: 200px;
+}
+
+.padding{
+    padding: 20px;
+}
+.footer-padding{
+    padding: 10px 20px 30px 20px;
+}
+
+
 /* 
     HEADER
 */
@@ -25,7 +57,6 @@
 
 .top-header{
     height: 100px;
-    padding: 20px;
 }
 
 .header-flex-container{
@@ -65,7 +96,6 @@ nav li{
 .bottom-header{
     display: flex;
     justify-content: center;
-    padding: 30px;
 }
 
 .bottom-header > div{
@@ -79,24 +109,34 @@ nav li{
 
 .main-flex-container{
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    padding: 20px;
-}
-
-.big-col{
-    width: 60%;
-    height: 200px;
-}
-
-.small-col{
-    width: 40%;
-    height: 200px;
 }
 
 .section-background{
     background-color: #D3D3D3;
 }
+
+/* 
+    FOOTER
+*/
+
+/* TOP FOOTER */
+
+.top-footer-flex-container{
+    display: flex;
+    justify-content: center;
+}
+
+.footer-background{
+    background-color: #23272A;
+}
+
+.footer-2nd-flex{
+    display: flex;
+    width: calc((100% / 12) * 8);
+    height: 200px;
+}
+
 
 /* 
     DEBUG
@@ -130,5 +170,24 @@ div.header-flex-container{
 
 .small-col{
     background-color: #FFC0CB;
+    border: 2px dashed black;
+}
+
+.col-12{
+    background-color: #228B22;
+    border: 2px dashed black;
+}
+
+.col-1{
+    background-color: #20B2AA;
+    border: 2px dashed white;
+}
+
+.col-2{
+    background-color: #F08080;
+    border: 2px dashed black;
+}
+
+.top-footer-flex-container{
     border: 2px dashed black;
 }
