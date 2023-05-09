@@ -15,3 +15,61 @@
     max-width: 1200px;
     margin: 0 auto;
 }
+
+header{
+    background-color: #ADD8E6;
+    height: 100px;
+    padding: 20px;
+}
+
+.flex-container{
+    display: flex;
+}
+
+/* 
+    HEADER
+*/
+                                /* TOP HEADER */
+nav li{
+    display: inline-block;
+}
+
+.top-header{
+    justify-content: center;
+    height: 50px;
+    align-items: center;
+    font-size: 1.5em;
+    
+}
+
+.logo{
+    width: 20%;
+    height: 100%;
+    padding: 10px;
+}
+
+nav{
+    width: 60%;
+    height: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+.login{
+    width: 20%;
+    height: 100%;
+    text-align: end;
+    padding: 10px;
+}
+
+/* 
+    DEBUG
+*/
+
+.flex-container > *{
+    border: 2px dashed black;
+}
+
+div.flex-container{
+    background-color: #DAA520;
+}
