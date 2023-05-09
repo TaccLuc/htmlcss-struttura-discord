@@ -1,6 +1,7 @@
 /* 
     RESET
 */
+
 *{
     margin: 0;
     padding: 0;
@@ -16,32 +17,25 @@
     margin: 0 auto;
 }
 
-header{
-    background-color: #ADD8E6;
+/* 
+    HEADER
+*/
+
+/* TOP HEADER */
+
+.top-header{
     height: 100px;
     padding: 20px;
 }
 
-.flex-container{
+.header-flex-container{
     display: flex;
-}
-
-/* 
-    HEADER
-*/
-                                /* TOP HEADER */
-nav li{
-    display: inline-block;
-}
-
-.top-header{
     justify-content: center;
     height: 50px;
     align-items: center;
-    font-size: 1.5em;
-    
-}
+    font-size: 1.5em;  
 
+}
 .logo{
     width: 20%;
     height: 100%;
@@ -55,6 +49,10 @@ nav{
     padding: 10px;
 }
 
+nav li{
+    display: inline-block;
+}
+
 .login{
     width: 20%;
     height: 100%;
@@ -62,14 +60,38 @@ nav{
     padding: 10px;
 }
 
+/* BOTTOM HEADER */
+.bottom-header{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+
+
 /* 
     DEBUG
 */
 
-.flex-container > *{
+.header-flex-container > *{
     border: 2px dashed black;
 }
 
-div.flex-container{
+div.header-flex-container{
     background-color: #DAA520;
+}
+
+.top-header{
+    background-color: #ADD8E6;
+}
+
+.bottom-header > div{
+    background-color: #EE82EE;
+    height: 200px;
+    width: 50%;
+    border: 2px dashed black;
+}
+
+.bottom-header{
+    background-color: #00008E;
 }
