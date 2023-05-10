@@ -55,7 +55,7 @@
 }
 
 .col-12{
-    width: calc((100% / 12) *12);
+    width: calc((100% / 12) * 12);
     height: 200px;
 }
 
@@ -65,7 +65,7 @@
 }
 
 .col-single{
-    width: 25%;
+    width: calc((100% / 12) * 3);
     height: 200px;
 }
 
